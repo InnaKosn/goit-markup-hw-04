@@ -10,7 +10,6 @@
 .link {
   text-decoration:none ;
 }
-
   /*убирает маркер списка*/
   .list {
     list-style: none;
@@ -18,9 +17,7 @@
 html{
   box-sizing: border-box;
 }
-
-
-  /*убирает пустоту между картинками*/
+ /*убирает пустоту между картинками*/
   img {
     display: block;
     max-width: 100%;
@@ -82,15 +79,12 @@ body {
   padding-top:94px ;
   padding-bottom:94px ;
 }
-
-
 /*=========СТУДИЯ=========*/
 /*=====хедер=====*/
 .header-page-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 .header-page {
   border-bottom: 1px solid #ececec;
@@ -105,15 +99,14 @@ body {
   column-gap: 50px;
 }
 .contact{
-  align-items:baseline;
+  align-items:center;
 }
 
 .logotyp {
   margin-right: 93px;
   font-family: var(--secondary-font);
   font-size: 26px;
-
-  color: var(--accent-color);
+color: var(--accent-color);
 }
 /*секция меню*/
 
@@ -134,8 +127,10 @@ body {
 .current {
   color: var(--accent-color);
 }
-
 .contact-elem {
+  display: flex;
+  column-gap: 10px; 
+  align-items: center;
   padding-top: 32px;
   padding-bottom:32px;
   font-weight: 500;
@@ -143,10 +138,14 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-color);
 }
+.contact-icon{
+  fill:currentColor;
+}
 .contact-elem:hover,
 .contact-elem:focus {
-  color: var(--accent-color);
+color: var(--accent-color);
 }
+
 /*=====Герой=====*/
 
 /*кнопка*/
@@ -169,21 +168,24 @@ body {
 }
 .hero-modal-btn:hover,
 .hero-modal-btn:focus {
-  box-shadow: 0px 4px 4px #2196f3;
-  
+  box-shadow: 0px 4px 4px #2196f3; 
 }
 /*^^^кнопкин end^^^*/
-
-
 
  .hero {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
+
   background-color: #C4C4C4;
   background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url("../images/hero.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 .hero-title {
   width: 696px;
   text-align: center;
@@ -199,7 +201,6 @@ body {
   color: var(--alternativ-color);
 }
 /*=====презент=====*/
-/*.present-container*/ 
  
 .present-list {
   display: flex;
@@ -218,6 +219,7 @@ body {
   justify-content: center;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .present-title {
   margin-bottom: 10px;
@@ -274,6 +276,7 @@ body {
 .team-prof {
   font-weight: 400;
   font-size: 16px;
+  margin-bottom: 16px;
 }
 .network-list{
   display: flex;
@@ -303,7 +306,6 @@ body {
 
 .team-elem{
   background: #FFFFFF;
-    /* material shadow v1 */
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -339,6 +341,7 @@ body {
 .foot{
   display: flex;
   column-gap:70px ;
+  align-items: baseline;
 }
 .join-list{
   display: flex;
